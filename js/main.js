@@ -1,3 +1,3 @@
 $(document).ready(function(){
-  console.log("test95");
+  console.log('hello');
 });

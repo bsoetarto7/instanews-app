@@ -1,0 +1,14 @@
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+@mixin headline($color, $size) {
+  color: $color;
+  font-size: $size;
+}

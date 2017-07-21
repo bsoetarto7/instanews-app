@@ -16,11 +16,32 @@
   .select-categories-dropdown{
     transition: margin-top 1s ease-in-out;
   }
-  .ia-loading-gif{
+  .ina-loading-gif{
     max-width: 70px;
     height: auto;
     margin: 20px auto 0 auto;
     display: block;
+  }
+  @include tablet {
+    justify-content: flex-start;
+    .header-logo-select-section{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      img{
+        margin: 0;
+        display: inline-block;
+      }
+      p{
+        margin: 0 0 20px 0;
+      }
+      .ina-loading-gif{
+        margin: 0 0 0 40px;
+      }
+    }
+    .header-select-section{
+      display: inline-block;
+    }
   }
 }
 .ina-header-small{
@@ -30,5 +51,8 @@
   }
   .select-categories-dropdown{
     margin-top: 10px;
+  }
+  @include tablet {
+    height: 200px;
   }
 }

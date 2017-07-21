@@ -13,44 +13,46 @@
   </head>
   <body>
     <header class="ina-header container vertical-align-center">
-      <div>
+      <div class="header-logo-select-section">
         <img src="img/nyt-logo.svg" alt="logo"/>
-        <p>Choose a section</p>
-        <select id="select-categories-dropdown" class="select-categories-dropdown">
-          <option value="">--- select ----</option>
-          <option value="home">home</option>
-          <option value="opinion">opinion</option>
-          <option value="world">world</option>
-          <option value="national">national</option>
-          <option value="politics">politics</option>
-          <option value="upshot">upshot</option>
-          <option value="nyregion">NY region</option>
-          <option value="business">business</option>
-          <option value="technology">technology</option>
-          <option value="science">science</option>
-          <option value="health">health</option>
-          <option value="sports">sports</option>
-          <option value="arts">arts</option>
-          <option value="books">books</option>
-          <option value="movies">movies</option>
-          <option value="theater">theater</option>
-          <option value="sundayreview">sunday review</option>
-          <option value="fashion">fashion</option>
-          <option value="tmagazine">tmagazine</option>
-          <option value="food">food</option>
-          <option value="travel">travel</option>
-          <option value="magazine">magazine</option>
-          <option value="realestate">real estate</option>
-          <option value="automobiles">automobiles</option>
-          <option value="obituaries">obituaries</option>
-          <option value="insider">insider</option>
-        </select>
+        <div class="header-select-section">
+          <p>Choose a section</p>
+          <select id="select-categories-dropdown" class="select-categories-dropdown">
+            <option value="">--- select ----</option>
+            <option value="home">home</option>
+            <option value="opinion">opinion</option>
+            <option value="world">world</option>
+            <option value="national">national</option>
+            <option value="politics">politics</option>
+            <option value="upshot">upshot</option>
+            <option value="nyregion">NY region</option>
+            <option value="business">business</option>
+            <option value="technology">technology</option>
+            <option value="science">science</option>
+            <option value="health">health</option>
+            <option value="sports">sports</option>
+            <option value="arts">arts</option>
+            <option value="books">books</option>
+            <option value="movies">movies</option>
+            <option value="theater">theater</option>
+            <option value="sundayreview">sunday review</option>
+            <option value="fashion">fashion</option>
+            <option value="tmagazine">tmagazine</option>
+            <option value="food">food</option>
+            <option value="travel">travel</option>
+            <option value="magazine">magazine</option>
+            <option value="realestate">real estate</option>
+            <option value="automobiles">automobiles</option>
+            <option value="obituaries">obituaries</option>
+            <option value="insider">insider</option>
+          </select>
+        </div>
       </div>
     </header>
     <section class="ina-top-stories-section">
-      <ul id="top-stories-list" class="top-stories-list"></ul>
+      <ul id="top-stories-list" class="top-stories-list flex-container"></ul>
     </section>
-    <footer class="ina-footer">
+    <footer class="ina-footer container">
       <p>© Copyright 2016 INSTANEWS</p>
     </footer>
     <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>

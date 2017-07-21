@@ -50,8 +50,8 @@ p{
   flex: 0 0 100%;
 }
 @include tablet {
-  .flex-item-tablet-33{
-    flex: 0 0 33.33%;
+  .flex-item-tablet-50{
+    flex: 0 0 50%;
   }
 }
 @include desktop {

@@ -1,33 +1,24 @@
-/* ---------- Default ---------- */
-*,*:before,*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-*{
-  font-family: 'Open Sans', sans-serif;
-}
-html{
-  font-size: 16px;
-}
-body{
-  background-color: #000;
-}
-h1,h2,h3,h4,h5,h5,h6{
-  font-weight: bold;
-  font-style: normal;
-}
-.container{
-  padding: 20px 15px;
-  margin: 0 auto;
-  max-width: 1240px;
-}
-p{
-  color: #fff;
-}
-.top-stories-item{
-  width: 100%;
-  height:400px;
-  background-size: cover;
-  background-position: center;
+.ina-top-stories-section{
+  .ia-loading-gif{
+    max-width: 70px;
+    margin: 0 auto;
+    display: block;
+  }
+  .top-stories-list{
+    padding: 0;
+    margin: 0;
+    .top-stories-item{
+      width: 100%;
+      height:400px;
+      background-size: cover;
+      background-position: center;
+      list-style: none;
+      overflow: auto;
+      position: relative;
+      p{
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
 }

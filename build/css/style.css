@@ -421,6 +421,37 @@ template {
   font-weight: bold;
   font-style: normal; }
 
+.ina-header {
+  height: 90vh;
+  text-align: center;
+  position: relative;
+  -webkit-transition: height 1s ease-in-out;
+  transition: height 1s ease-in-out; }
+  .ina-header img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    -webkit-transition: height 0.5s ease-in-out;
+    transition: height 0.5s ease-in-out; }
+  .ina-header p {
+    margin: 20px 0; }
+  .ina-header .select-categories-dropdown {
+    -webkit-transition: margin-top 1s ease-in-out;
+    transition: margin-top 1s ease-in-out; }
+  .ina-header .ia-loading-gif {
+    max-width: 70px;
+    height: auto;
+    margin: 20px auto 0 auto;
+    display: block; }
+
+.ina-header-small {
+  height: 260px; }
+  .ina-header-small img {
+    height: 100px; }
+  .ina-header-small .select-categories-dropdown {
+    margin-top: 10px; }
+
 /* ---------- Default ---------- */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -439,16 +470,53 @@ h1, h2, h3, h4, h5, h5, h6 {
   font-weight: bold;
   font-style: normal; }
 
+p {
+  color: #fff; }
+
 .container {
   padding: 20px 15px;
   margin: 0 auto;
   max-width: 1240px; }
 
-p {
-  color: #fff; }
+.container-fluid {
+  padding: 20px 0px;
+  margin: 0 auto;
+  max-width: 1240px; }
 
-.top-stories-item {
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  background-position: center; }
+.vertical-align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.ina-top-stories-section .ia-loading-gif {
+  max-width: 70px;
+  margin: 0 auto;
+  display: block; }
+
+.ina-top-stories-section .top-stories-list {
+  padding: 0;
+  margin: 0; }
+  .ina-top-stories-section .top-stories-list .top-stories-item {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    list-style: none;
+    overflow: auto;
+    position: relative; }
+    .ina-top-stories-section .top-stories-list .top-stories-item p {
+      position: absolute;
+      bottom: 0; }
+
+.ina-footer {
+  height: 10vh;
+  text-align: center; }
+
+.ina-footer-small {
+  height: auto; }

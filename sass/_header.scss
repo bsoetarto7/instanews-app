@@ -1,0 +1,34 @@
+.ina-header{
+  height:90vh;
+  text-align: center;
+  position: relative;
+  transition: height 1s ease-in-out;
+  img{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    transition: height 0.5s ease-in-out;
+  }
+  p{
+    margin: 20px 0;
+  }
+  .select-categories-dropdown{
+    transition: margin-top 1s ease-in-out;
+  }
+  .ia-loading-gif{
+    max-width: 70px;
+    height: auto;
+    margin: 20px auto 0 auto;
+    display: block;
+  }
+}
+.ina-header-small{
+  height: 260px;
+  img{
+    height: 100px;
+  }
+  .select-categories-dropdown{
+    margin-top: 10px;
+  }
+}

@@ -624,13 +624,12 @@ template {
   font-weight: bold;
   font-style: normal; }
 
-/* ---------- Default ---------- */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 * {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 html {
   font-size: 16px; }
@@ -719,6 +718,8 @@ p {
     transition: height 0.5s ease-in-out; }
   .ina-header p {
     margin: 20px 0; }
+  .ina-header .header-select-section {
+    width: 150px; }
   .ina-header .select-categories-dropdown {
     -webkit-transition: margin-top 1s ease-in-out;
     transition: margin-top 1s ease-in-out; }

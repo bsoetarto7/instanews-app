@@ -1,34 +1,34 @@
-/* ---------- Default ---------- */
+// Base SCSS that sets up the html layout
 *,*:before,*:after {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
 *{
-  font-family: 'Open Sans', sans-serif;
+  font-family: $content-font;
 }
 html{
-  font-size: 16px;
+  font-size: $base-font-size;
 }
 body{
-  background-color: #000;
+  background-color: $black;
 }
 h1,h2,h3,h4,h5,h5,h6{
   font-weight: bold;
   font-style: normal;
 }
 p{
-  color: #fff;
+  color: $white;
 }
 .container{
   padding: 20px 15px;
   margin: 0 auto;
-  max-width: 1240px;
+  max-width: $container-width;
 }
 .container-fluid{
   padding: 20px 0px;
   margin: 0 auto;
-  max-width: 1240px;
+  max-width: $container-width;
 }
 .vertical-align-center{
   align-items: center;

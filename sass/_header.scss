@@ -1,3 +1,4 @@
+// Header SCSS
 .ina-header{
   height:90vh;
   text-align: center;
@@ -12,6 +13,9 @@
   }
   p{
     margin: 20px 0;
+  }
+  .header-select-section{
+    width: 150px;
   }
   .select-categories-dropdown{
     transition: margin-top 1s ease-in-out;

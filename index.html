@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="./build/css/style.min.css">
   </head>
   <body>
+    <!-- Header section containing the logo and the select and the loading gif  -->
     <header class="ina-header container vertical-align-center">
       <div class="header-logo-select-section">
         <img src="img/nyt-logo.svg" alt="logo"/>
         <div class="header-select-section">
           <p>Choose a section</p>
+          <!-- The select dom and its options  -->
           <select id="select-categories-dropdown" class="select-categories-dropdown">
             <option value="">--- select ----</option>
             <option value="home">home</option>
@@ -49,12 +51,15 @@
         </div>
       </div>
     </header>
+    <!-- Content section where the top stories will be appended to  -->
     <section class="ina-top-stories-section">
       <ul id="top-stories-list" class="top-stories-list flex-container"></ul>
     </section>
+    <!-- Footer section containing the copyrights  -->
     <footer class="ina-footer container">
       <p>© Copyright 2016 INSTANEWS</p>
     </footer>
+    <!-- Scripts to load -->
     <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/vendor/jquery.selectric.min.js"></script>
     <script type="text/javascript" src="build/js/main.min.js"></script>

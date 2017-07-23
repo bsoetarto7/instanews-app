@@ -692,7 +692,7 @@ p {
           flex: 0 0 100%; }
 
 .min-height-section {
-  min-height: 400px; }
+  min-height: 300px; }
 
 @media (min-width: 600px) {
   .flex-item-tablet-50 {

@@ -723,6 +723,8 @@ p {
   .ina-header .select-categories-dropdown {
     -webkit-transition: margin-top 1s ease-in-out;
     transition: margin-top 1s ease-in-out; }
+    .ina-header .select-categories-dropdown option {
+      text-transform: capitalize; }
   .ina-header .ina-loading-gif {
     max-width: 70px;
     height: auto;

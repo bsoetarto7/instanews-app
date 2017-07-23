@@ -19,6 +19,9 @@
   }
   .select-categories-dropdown{
     transition: margin-top 1s ease-in-out;
+    option{
+      text-transform: capitalize;
+    }
   }
   .ina-loading-gif{
     max-width: 70px;

@@ -15,7 +15,7 @@ $(document).ready(function(){
         $('.ina-top-stories-section').prepend('<img class="ina-loading-gif" src="img/ajax-loader.gif" alt="loading gif">'); // Add the loading gif on the content section
       }
       previousSelected = $(this).val(); // update previous select value
-      $('.ina-top-stories-section').addClass('container-fluid'); // add the container class to content
+      $('.ina-top-stories-section').addClass('min-height-section'); // add the container class to content
       // Assign url into variable and add select value also with query API
       var url = 'https://api.nytimes.com/svc/topstories/v2/';
       url += $(this).val()+'.json';
@@ -57,7 +57,7 @@ $(document).ready(function(){
       $('.ina-footer').removeClass('ina-footer-small'); // change back to the footer to default
       $('.top-stories-list-item').remove(); // remove items in the stories section
       $('.ina-loading-gif').remove(); // remove the loading gif
-      $('.ina-top-stories-section').removeClass('container-fluid'); // remove the content class
+      $('.ina-top-stories-section').removeClass('min-height-section'); // remove the content class
       previousSelected = $(this).val(); // update previous selected value
     }
   });

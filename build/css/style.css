@@ -691,6 +691,9 @@ p {
       -ms-flex: 0 0 100%;
           flex: 0 0 100%; }
 
+.min-height-section {
+  min-height: 400px; }
+
 @media (min-width: 600px) {
   .flex-item-tablet-50 {
     -webkit-box-flex: 0;
@@ -771,7 +774,7 @@ p {
 .ina-top-stories-section .top-stories-list {
   padding: 0;
   margin: 0; }
-  .ina-top-stories-section .top-stories-list li {
+  .ina-top-stories-section .top-stories-list .top-stories-list-item {
     list-style: none; }
   .ina-top-stories-section .top-stories-list .top-stories-item {
     height: 400px;

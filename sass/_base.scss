@@ -49,6 +49,9 @@ p{
 .flex-item-mobile-100{
   flex: 0 0 100%;
 }
+.min-height-section{
+  min-height: 400px;
+}
 @include tablet {
   .flex-item-tablet-50{
     flex: 0 0 50%;

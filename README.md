@@ -6,7 +6,7 @@ Instanews App is an app that displays the different top news stories from the Ne
   - Click on desirable article
   - App will redirect user to the story in New York Times website
 
-### Tech
+### Tech & Programming Language
 Instanews App uses the following:
 
 * HTML

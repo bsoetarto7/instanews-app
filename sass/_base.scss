@@ -52,6 +52,14 @@ p{
 .min-height-section{
   min-height: 400px;
 }
+.screen-reader {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
 @include tablet {
   .flex-item-tablet-50{
     flex: 0 0 50%;

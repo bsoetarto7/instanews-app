@@ -722,7 +722,7 @@ p {
   .ina-header p {
     margin: 20px 0; }
   .ina-header .header-select-section {
-    width: 150px; }
+    width: auto; }
   .ina-header .select-categories-dropdown {
     -webkit-transition: margin-top 1s ease-in-out;
     transition: margin-top 1s ease-in-out; }
@@ -754,7 +754,8 @@ p {
         .ina-header .header-logo-select-section .ina-loading-gif {
           margin: 0 0 0 40px; }
       .ina-header .header-select-section {
-        display: inline-block; } }
+        display: inline-block;
+        width: 150px; } }
 
 .ina-header-small {
   height: 260px; }

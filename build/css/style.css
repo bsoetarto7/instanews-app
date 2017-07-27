@@ -810,6 +810,8 @@ p {
   text-align: center; }
   .ina-footer p {
     margin: 0; }
+    .ina-footer p span {
+      text-transform: uppercase; }
   @media (min-width: 600px) {
     .ina-footer {
       text-align: left; } }

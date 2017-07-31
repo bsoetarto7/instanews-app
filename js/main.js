@@ -32,19 +32,19 @@ $(() =>{
             if(items.multimedia.length>0){ // Check if there is a multimedia url 
               // Store the content to display in to the topStories variable for append
               topStories += `<li class="top-stories-list-item flex-item-mobile-100 flex-item-tablet-50 flex-item-desktop-25">
-              <a href="${items.url}" target="_blank">
-              <div class="top-stories-item" style="background-image:url('${items.multimedia[4].url}')">
-              <p>${items.abstract}</p>
-              </div>
-              </a>
-              </li>`;
+                              <a href="${items.url}" target="_blank">
+                                <div class="top-stories-item" style="background-image:url('${items.multimedia[4].url}')">
+                                  <p>${items.abstract}</p>
+                                </div>
+                              </a>
+                            </li>`;
               numberOfStories++;
             }
           }
         });
         $('#top-stories-list').append(topStories); // Append the content into the sections
       }).fail((err) => { // Fail AJAX function
-        throw err; // Throw and error
+        throw err; // Throw an error
       });
     }
     else{ // when the selected value is empty

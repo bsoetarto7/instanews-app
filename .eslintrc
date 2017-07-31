@@ -1,5 +1,6 @@
 {
   "extends": "eslint:recommended",
+  "parser":"babel-eslint",
   "rules": {
     // our rules will go here...
     "no-alert": 1,

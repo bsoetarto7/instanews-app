@@ -1,14 +1,15 @@
 // Required Packages
-var gulp          = require('gulp'),
-    uglify        = require('gulp-uglify'),
-    rename        = require('gulp-rename'),
-    watch         = require('gulp-watch'),
-    eslint        = require('gulp-eslint'),
-    sass          = require('gulp-sass'),
-    autoprefixer  = require('gulp-autoprefixer'),
-    cssnano       = require('gulp-cssnano'),
-    prettyError   = require('gulp-prettyerror'),
-    browserSync   = require('browser-sync').create();
+const   gulp          = require('gulp'),
+        uglify        = require('gulp-uglify'),
+        rename        = require('gulp-rename'),
+        watch         = require('gulp-watch'),
+        eslint        = require('gulp-eslint'),
+        sass          = require('gulp-sass'),
+        autoprefixer  = require('gulp-autoprefixer'),
+        cssnano       = require('gulp-cssnano'),
+        prettyError   = require('gulp-prettyerror'),
+        browserSync   = require('browser-sync').create(),
+        babel         = require('gulp-babel');
 
 // Compiling SCSS files
 gulp.task('sass', function() {
@@ -26,6 +27,9 @@ gulp.task('sass', function() {
 // Minifying javascript files
 gulp.task('scripts',['lint'], function(){
     gulp.src('./js/*.js')
+        .pipe(babel({
+            presets:['es2015']
+        }))
         .pipe(uglify())
         .pipe(rename({ extname: '.min.js' }))
         .pipe(gulp.dest('./build/js'))

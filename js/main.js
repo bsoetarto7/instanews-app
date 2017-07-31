@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function() {
   var previousSelected;
   $('#select-categories-dropdown').selectric(); // Initialize selectric for the select dropdown
   $('#select-categories-dropdown').on('selectric-open',function(){ // When selectric select dropdown is open function

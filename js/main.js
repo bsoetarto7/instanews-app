@@ -1,3 +1,6 @@
+import $ from 'jquery';
+import 'jquery-selectric';
+import '../sass/style.scss';
 $(() =>{
   var previousSelected;
   $('#select-categories-dropdown').selectric(); // Initialize selectric for the select dropdown

@@ -1,19 +1,19 @@
-$(document).ready(function(){
+$(function() {
   var previousSelected;
   $('#select-categories-dropdown').selectric(); // Initialize selectric for the select dropdown
   $('#select-categories-dropdown').on('selectric-open',function(){ // When selectric select dropdown is open function
-    previousSelected = $(this).val(); // Store what was selected before changing the options 
+    previousSelected = $(this).val();
   })
   .change(function() { // When there is a change in the select drop down function
-    if ($(this).val()!=''){ // When the selected value is not empty
-      $('.top-stories-list-item').remove(); // Remove existing top stories item html dom
-      if(previousSelected == ''){ // If the the previous selected item was from the default
-        $('.ina-header .header-logo-select-section').append('<img class="ina-loading-gif" src="img/ajax-loader.gif" alt="loading gif">'); // add loading gif beside the select drop down (desktop) and under it (mobile)
+    if ($(this).val()!==''){ // When the selected value is not empty
+      $('.top-stories-list-item').remove();
+      if(previousSelected === ''){ // If the the previous selected item was from the default
+        $('.ina-header .header-logo-select-section').append('<img class="ina-loading-gif" src="img/ajax-loader.gif" alt="loading gif">');
       }else{
-        $('.ina-top-stories-section').prepend('<img class="ina-loading-gif" src="img/ajax-loader.gif" alt="loading gif">'); // Add the loading gif on the content section
+        $('.ina-top-stories-section').prepend('<img class="ina-loading-gif" src="img/ajax-loader.gif" alt="loading gif">');
       }
-      previousSelected = $(this).val(); // update previous select value
-      $('.ina-top-stories-section').addClass('min-height-section'); // add min-height to the section
+      previousSelected = $(this).val();
+      $('.ina-top-stories-section').addClass('min-height-section');
       // Assign url into variable and add select value also with query API
       var url = 'https://api.nytimes.com/svc/topstories/v2/';
       url += $(this).val()+'.json';
@@ -25,11 +25,11 @@ $(document).ready(function(){
         url: url,
         method: 'GET',
       }).done(function(data) {
-        $('.ina-header').addClass('ina-header-small'); // Add a class to reduce the height of the header
-        $('.ina-footer').addClass('ina-footer-small'); // Add a class to the footer to reduce the height as well
-        $('.ina-loading-gif').remove(); // Remove loading GIF
-        var topStories=''; // Declare a variable that will store the top stories content
-        var numberOfStories = 1; // Declare a counter
+        $('.ina-header').addClass('ina-header-small');
+        $('.ina-footer').addClass('ina-footer-small');
+        
+        var topStories='';
+        var numberOfStories = 1;
         // Use a each function to run through the results
         $.each(data.results,function(index, items){
           if(numberOfStories<=12){ // If the counter is still below 12, meaning if the number of stories to append has not reach below 12
@@ -45,18 +45,20 @@ $(document).ready(function(){
             }
           }
         });
-        $('#top-stories-list').append(topStories); // Append the content into the sections
+        $('#top-stories-list').append(topStories);
       }).fail(function(err) { // Fail AJAX function
-        throw err; // Throw and error
+        throw err;
+      }).always(function(){
+        $('.ina-loading-gif').remove();
       });
     }
     else{ // when the selected value is empty
-      $('.ina-header').removeClass('ina-header-small'); // change back to the header to default
-      $('.ina-footer').removeClass('ina-footer-small'); // change back to the footer to default
-      $('.top-stories-list-item').remove(); // remove items in the stories section
-      $('.ina-loading-gif').remove(); // remove the loading gif
-      $('.ina-top-stories-section').removeClass('min-height-section'); // remove the min-height-section class
-      previousSelected = $(this).val(); // update previous selected value
+      $('.ina-header').removeClass('ina-header-small');
+      $('.ina-footer').removeClass('ina-footer-small');
+      $('.top-stories-list-item').remove();
+      $('.ina-loading-gif').remove();
+      $('.ina-top-stories-section').removeClass('min-height-section');
+      previousSelected = $(this).val();
     }
   });
 });

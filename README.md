@@ -22,3 +22,16 @@ Instanews App uses these following plugins:
 | Plugin | Usage |
 | ------ | ------ |
 | Selectric | Custom select dropdown |
+
+### Screenshot
+These are the screenshot of what the app would look like in the different screen sizes. Starting from mobile first, tablet followed by desktop view.
+  - Mobile (Below 600px)
+  - Tablet (Between 600px and 1240px)
+  - Desktop (above 1240px)
+
+  ![Aloha desktop](./img/readme-screenshot/readme-screenshot-1.jpg)
+
+  #### On Hover
+  When user hovers over the images, a excerpt will be shown and users can click anywhere on the picture to go to the New York Times website to read the article in more detail.
+
+  ![Aloha desktop](./img/readme-screenshot/readme-screenshot-2.jpg)
